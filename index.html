@@ -1,17 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>アクセスを確認中…</title>
-  <script>
-    // JSが有効な人間だけがリダイレクトされる
-    setTimeout(function() {
-      window.location.href = "https://x.com/otonahimatubu";
-    }, 3000);
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>リダイレクト中…</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        h1 {
+            color: #333;
+            font-size: 22px;
+        }
+        p {
+            color: #777;
+        }
+    </style>
+    <script>
+        // JSが有効な人間だけリダイレクトさせる
+        setTimeout(function() {
+            location.replace("https://x.com/otonahimatubu");
+        }, 3000);
+    </script>
 </head>
 <body>
-  <h2>確認中です…</h2>
-  <p>自動で移動しない場合は <a href="https://x.com/otonahimatubu">こちら</a> をクリック</p>
+    <h1>アクセス中…すぐに切り替わります</h1>
+    <p>自動的に移動しない場合は、JavaScriptが有効か確認してください。</p>
+    <noscript>
+        <p>このページを見るにはJavaScriptを有効にしてください。</p>
+    </noscript>
 </body>
 </html>
